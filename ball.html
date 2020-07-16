@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>球</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.ball{
+			width: 60px;
+			height: 60px;
+			background:linear-gradient(45deg,white,yellow,black,purple,red);
+			border-radius: 50%;
+
+
+			animation-name:ball;
+			animation-duration:10s;
+			animation-iteration-count:infinite;
+			animation-timing-function:linear;
+		}
+		@keyframes ball{
+			0%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 0%;
+				top:0%;
+				
+			}
+			10%{
+				transform: rotate(360deg);
+				position: absolute;
+				left: 45%;
+				top:20%;
+			}
+			20%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 90%;
+				top:30%;
+			}
+			30%{
+				transform: rotate(360deg);
+				position: absolute;
+				left: 80%;
+				top: 30%;
+			}			
+			40%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 45%;
+				top: 40%;
+			}
+			50%{
+				transform: rotate(360deg);
+				position: absolute;
+				left: 0%;
+				top: 50%;
+			}
+			60%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 45%;
+				top: 60%;
+			}
+			70%{
+				transform: rotate(360deg);
+				position: absolute;
+				left: 90%;
+				top: 68%;
+			}
+			80%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 0%;
+				top: 75%;
+			}
+			90%{
+				transform: rotate(360deg);
+				position: absolute;
+				left: 45%;
+				top: 87%;
+			}
+			100%{
+				transform: rotate(0deg);
+				position: absolute;
+				left: 90%;
+				top: 90%;
+				}
+
+			
+
+
+		}
+	</style>
+</head>
+<body>
+	<div class="ball"></div></div>
+</body>
+</html>
