@@ -9,6 +9,10 @@
 		*{
 			background-color: #68cdd5;
 		}
+		.back{
+			width: 35px;
+			opacity:0.9;
+		}
 		.logo{
 			position: absolute;
 			margin: auto;
@@ -18,16 +22,6 @@
 			right: 0;
 			top: 12vh;
 		}
-		.logo2{
-			position: absolute;
-			left: 10vw;
-			top: 60vh;
-		}
-		.logo3{
-			position: absolute;
-			top: 60vh;
-			right: 10vw;
-		}
 		.p1{
 			color: white;
 			width: 80vw;
@@ -35,35 +29,50 @@
 			top: 40vh;
 			right: 10vw;
 		}
-
-		.p2{
-			color: white;
-			position: absolute;
-			left: 10vw;
-			top: 70vh;
-		}
-		.p3{
-			color: white;
-			position: absolute;
-			top: 70vh;
-			right: 10vw;
-		}
 		@media (min-width:1280px) {
 			.p1{
 				text-align: center;
 			}
+		}
+		.left1{
+			display: flex;
+			flex-direction: column;
+			width:84px;
+			position: absolute;
+			top: 70vh;
+			left: 10vw;
+			text-align: center;
+			
+		}
+		.right{
+			display: flex;
+			flex-direction: column;
+			width:84px;
+			position: absolute;
+			top: 70vh;
+			right: 10vw;
+			text-align: center;
 		}
 
 
 	</style>
 </head>
 <body>
-	<img class="logo" src="img/上面的葡萄.png" alt="葡萄藤">
-	<div class="p1">葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具为主。</div>
-	<img src="img/右下葡萄.png" alt="" class="logo3">
-	<div class="p2">290560933</div>
-	<img src="img/左边蓝色的人.png" alt="" class="logo2">
-	<div class="p3">BJPTTeng</div>
+		<img src="./img/左上角返回键.png" alt="" class="back">
+		<img class="logo" src="img/上面的葡萄.png" alt="葡萄藤">
+		<div class="p1">葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具为主。</div>
+		
+		<div class="left1">
+			<img src="img/左边蓝色的人.png" alt="" class="logo2">
+			<div class="p2">290560933</div>
+		</div>
+		
+		<div class="right">
+			<img src="img/右下葡萄.png" alt="" class="logo3">
+			<div class="p3">BJPTTeng</div>
+		</div>
+	
+
 	 
 </body>
 </html>
