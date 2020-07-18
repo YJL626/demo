@@ -19,15 +19,29 @@
 		}
 		a{
 			text-decoration: none;
-			overflow:hidden;	
+			overflow:hidden;
 		}
-
+		nav{
+			display:flex;
+			width: 95%;
+			margin-left: 2.5%;
+			margin-left: 2.5%;
+			justify-content:space-between;
+			flex-wrap: wrap;
+			
+			
+		}
+		.heartq{
+			width: 24vmin;
+			height: 24vmin;
+		}
 		.heart{
 			margin: 1vmin;
 			background-color: white;
 			width: 25vmin;
 			height: 30vmin;
-			float: left;
+			order: 1;
+			
 		}
 		.heartp{
 			background-color:pink;
@@ -38,6 +52,7 @@
 			left: 0;
 			position: relative;
 			top: 5vmin;
+			left: 0.5vmin;
 			transform: rotate(45deg) scale(0.96);
 		}
 		.heartp::after{
@@ -58,40 +73,39 @@
 				border-radius: 50%;
 				right: 7.5vmin;
 				}
+
 		.heartpp{
 			font-size:5vmin;
-			position: relative;
-			top: 9vmin;
-			left: 6.5vmin;
+			text-align: center;
 			}
 		.ball{
 			margin: 1vmin;
 			background-color: white;
 			width: 25vmin;
 			height: 30vmin;
-			float: left;
+			order: 2;
+
 		}
 		.ballp{
 			background:linear-gradient(45deg,white,yellow,black,purple,red);
 			width: 24vmin;
 			height: 24vmin;
 			border-radius: 50%;
-			position: relative;
-			left: 0.5vmin;
-			top: 0.5vmin;
+
+			
 		}
 		.ballpp{
 			font-size:5vmin;
-			position: relative;
-			left: 8.3vmin;
-			
+			text-align: center;
+
 		}
 		.ge{
 			margin: 1vmin;
 			background-color: white;
 			width: 25vmin;
 			height: 30vmin;
-			float: left;
+			order: 3;
+
 		}
 		.gep{
 			background-color: white;
@@ -113,19 +127,32 @@
 		}
 		.gepp{
 			font-size:5vmin;
-			position: relative;
-			left: 5vmin;
+			text-align: center;
 		}
-		.mp3{
+		
 
+		.grape{
+			background-color: ;
+			width: 25vmin;
+
+			order: 4;
+		}
+		.grapep{
+			width: 24vmin;
+			
+		}
+		.grapepp{
+			text-align: center;
+			font-size: 5vmin;
+		}
+
+		.mp3{
+		
 			transform: scale(0.8);
 			position: absolute;
 			bottom: 0;
 			right: 0;
-			
 		}
-		
-
 		
 	</style>
 </head>
@@ -135,8 +162,10 @@
 			<nav>
 				<!-- 心 -->
 					<a href="demo/heart.html" class="heart">
-						<div class="heartp">
-							
+						<div class="heartq">
+							<div class="heartp">
+						</div>
+						
 						</div>
 						<p class="heartpp">heart</p>
 						</a>
@@ -167,6 +196,18 @@
 						<p class="gepp">九宫格</p>
 						
 					</a>
+					<!-- 葡萄藤 -->
+					<a href="demo1/grape/grape.html" class="grape">
+						<img src="demo1/grape/img/右下葡萄.png" alt="" class="grapep">
+						<p class="grapepp">葡萄藤</p>
+						
+						
+						
+					</a>
+
+						
+
+					
 			</nav>
 
 				
