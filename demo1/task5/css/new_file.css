@@ -1,0 +1,109 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		/* start-header */
+		header{
+			width: 100%;
+			height: 6.5vh;
+			display: flex;
+			align-items: center;
+			background-color: #5AC0CE;
+		}
+		.header{
+			width: 100%;
+			height: 6.5vh;
+			justify-content: center;
+		}
+		.header>p{
+			font-size: 2.5vh;
+			color: white;
+			text-align: center;
+			line-height: 6.5vh;
+			user-select:none;
+		}
+		.back{
+			width: 1.5vh;
+			height: 1.5vh;
+			margin-left: 4.5vmin;
+			border-left:solid white;
+			border-bottom:solid white;
+			transform: rotate(45deg);
+		}
+		.backbtn{
+			position: absolute;
+			width: 20%;
+		}
+		/* end-header */
+		section{
+			background-image: url(../img/main.png) ;
+			background-color: #5AC0CE;
+			background-size:cover;
+			display: flex;
+			height: 26vh;
+			align-self: center;
+		}
+		.section1{
+			height: 51.3%;
+			margin-left:4.16%;
+			align-self: center;
+		}
+		/* 个人信息 */
+		.personal-date{
+			margin-left: 6.11vw;
+			display: grid;
+			grid-template:
+			"a a"
+			"c c"
+			;
+			grid-template-rows:12.6vh ;
+			grid-gap:1.98vh 0;
+			
+		}
+		.name{
+			color: #FFFFFF;
+			font-size: 2.86vh;
+			align-self:end;
+			}
+		.old{
+			margin-left: 1.86vh;
+			font-size: 2.68vh;
+			color: #FFFFFF;
+			align-self:end;
+		}
+		/* 地址图标 */
+		.position{
+			width: 1vh;
+			height: 1vh;
+			border:0.5vh solid #5AC0CE;
+			border-radius:50%;
+			transform: scale(0.9);
+		}
+		.postionend{
+			position: relative;
+			right: 0.4vh;
+			top: 1vh;
+			height: 0;
+			width: 0;
+			border-radius: 50%;
+			border-bottom: 0.9vh solid #5AC0CE;
+			border-left: 0.9vh solid transparent;
+			border-right: 0.9vh solid transparent;
+			transform: rotate(180deg);
+		}
+		/* 地址 */
+		.address{
+			margin-left: -2.6vh;
+			color: #FFFFFF;
+			font-size: 1.88vh;
+		}
+		.main{
+			height: 48vh;
+			display: grid;
+			grid-template:
+			"a a"
+			
+		}
+		.end{
+			height: 19.5vh;
+		}
