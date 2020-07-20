@@ -4,220 +4,45 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>demo</title>
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		h1{
-			text-align: center;
-			font-size: 10vmin;
-			margin-top: 1vmin;
-			margin-bottom: 1vmin;
-
-		}
-		a{
-			text-decoration: none;
-			overflow:hidden;
-		}
-		nav{
-			display:flex;
-			width: 95%;
-			margin-left: 2.5%;
-			margin-left: 2.5%;
-			justify-content:space-between;
-			flex-wrap: wrap;
-			
-			
-		}
-		.heartq{
-			width: 24vmin;
-			height: 24vmin;
-		}
-		.heart{
-			margin: 1vmin;
-			background-color: white;
-			width: 25vmin;
-			height: 30vmin;
-			order: 1;
-			
-		}
-		.heartp{
-			background-color:pink;
-			width: 15vmin;
-			height: 15vmin;
-			margin: auto;
-			right: 0;
-			left: 0;
-			position: relative;
-			top: 5vmin;
-			left: 0.5vmin;
-			transform: rotate(45deg) scale(0.96);
-		}
-		.heartp::after{
-			content: "";
-			background-color: pink;
-			width: 15vmin;
-			height: 15vmin;
-			position: absolute;
-			border-radius: 50%;
-			bottom: 7.5vmin;
-			}
-			.heartp::before{
-				content: "";
-				background-color: pink;
-				width: 15vmin;
-				height: 15vmin;
-				position: absolute;
-				border-radius: 50%;
-				right: 7.5vmin;
-				}
-
-		.heartpp{
-			font-size:5vmin;
-			text-align: center;
-			}
-		.ball{
-			margin: 1vmin;
-			background-color: white;
-			width: 25vmin;
-			height: 30vmin;
-			order: 2;
-
-		}
-		.ballp{
-			background:linear-gradient(45deg,white,yellow,black,purple,red);
-			width: 24vmin;
-			height: 24vmin;
-			border-radius: 50%;
-
-			
-		}
-		.ballpp{
-			font-size:5vmin;
-			text-align: center;
-
-		}
-		.ge{
-			margin: 1vmin;
-			background-color: white;
-			width: 25vmin;
-			height: 30vmin;
-			order: 3;
-
-		}
-		.gep{
-			background-color: white;
-			width: 24vmin;
-			height: 24vmin;
-			
-			position: relative;
-			left: 0.5vmin;
-			top: 0.5vmin;
-
-		}
-		.g{
-			background-color: yellow;
-			width: 31%;
-			height: 31%;
-			margin: 1%;
-			border-radius: 1vmin;
-			float: left;
-		}
-		.gepp{
-			font-size:5vmin;
-			text-align: center;
-		}
-		
-
-		.grape{
-			background-color: ;
-			width: 25vmin;
-
-			order: 4;
-		}
-		.grapep{
-			width: 24vmin;
-			
-		}
-		.grapepp{
-			text-align: center;
-			font-size: 5vmin;
-		}
-
-		.mp3{
-		
-			transform: scale(0.8);
-			position: absolute;
-			bottom: 0;
-			right: 0;
-		}
-		
-	</style>
+	<link rel="stylesheet" href="css/index.css">
+	<title></title>
 </head>
 <body>
-		<header>
-			<h1>demo</h1>
-			<nav>
-				<!-- 心 -->
-					<a href="demo/heart.html" class="heart">
-						<div class="heartq">
-							<div class="heartp">
-						</div>
-						
-						</div>
-						<p class="heartpp">heart</p>
-						</a>
-						
-						<!-- 球 -->
-					<a href="demo/ball.html" class="ball">
-						<div class="ballp">
-							
-						</div>
-						<p class="ballpp">ball</p>
-						
-					</a>
-					
-					
-					<!--  九宫格-->
-					<a href="demo/jiugongge.html" class="ge">
-						<div class="gep">
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-							<div class="g"></div>
-						</div>
-						<p class="gepp">九宫格</p>
-						
-					</a>
-					<!-- 葡萄藤 -->
-					<a href="demo1/grape/grape.html" class="grape">
-						<img src="demo1/grape/img/右下葡萄.png" alt="" class="grapep">
-						<p class="grapepp">葡萄藤</p>
-						
-						
-						
-					</a>
-
-					<a href="demo1/task4login/task4login.html"><p>login</p></a>
-					
-					
-			</nav>
-
-				
-
-			
-
-
-		</header>
-		<audio class="mp3"src="mp3/水滴3.mp3" autoplay=""  controls="" >
-			当前浏览器不支持audio
-		</audio>
+	<header>
+		<h1>demo</h1>
+	</header>
+	<main class="project">
+		<!-- task1九宫格-start -->
+		<a href="demo/jiugongge.html">
+			<div class="jiugongge">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<p>九宫格</p>
+		</a>
+		<!-- task1九宫格—end -->
+		<!-- heart-start -->
+		<a href="demo/heart.html"><p>heart</p></a>
+		<!-- heart-end -->
+		<!-- ball-start -->
+		<a href="demo/ball.html"><p>ball</p></a>
+		<!-- ball-end -->
+		<!-- grape-start -->
+		<a href=""><img src="demo/grape/img/右下葡萄.png" alt=""><p>grape</p></a>
+		<!-- grape-start -->
+		<!-- login-page-start -->
+		<a href="demo/task4login/task4login.html"><img src="demo/task4login/img/locked%202.png" alt=""><p>login-page</p></a>
+		<!-- login-page-end -->
+		<!--  -->
+		<a href="">.....</a>
+		<!--  -->
+	</main>
 </body>
 </html>
