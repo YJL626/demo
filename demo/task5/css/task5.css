@@ -131,7 +131,10 @@
 			display:grid;
 			grid-template-columns: 12vh auto;
 			align-items: center;
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 7c7643cf1d04212412b26054fefa50e0bea215e0
 		}
 		
 		.line21 {
@@ -139,7 +142,10 @@
 			font-size: 2.686vh;
 			padding-right: 1vh;
 			border-right:1px solid #E1E5E7;
+<<<<<<< HEAD
 			
+=======
+>>>>>>> 7c7643cf1d04212412b26054fefa50e0bea215e0
 		}
 		.line22{
 			padding-left: 1vh;
@@ -149,7 +155,10 @@
 		.line2>div>span{
 			color: #FF0000;
 			font-size: 2.686vh;
+<<<<<<< HEAD
 			user-select:none;
+=======
+>>>>>>> 7c7643cf1d04212412b26054fefa50e0bea215e0
 		}
 		/* line2-end */
 		/* line3-6-start */
