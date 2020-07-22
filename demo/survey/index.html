@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/index.css">
+		<title></title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1 id="title">甜<sub>咸</sub>豆腐脑调查表</h1>
+				<p id="description">感谢您帮助我们改善豆腐脑</p>
+			</header>
+
+			<section>
+				<form action="survey-form">
+					<div class="form-group">
+					<label class="name-lable" for="name-label">名字</label>
+					<input type="text" 
+					name="name" 
+					id="name-label" 
+					value=""
+					placeholder="请输入名字"
+					required=""
+					 /></div>
+					<form action="form-group">
+						<div class="form-group">
+							<label class="email-lable" for="email-label">邮箱</label>
+							<input type="email" 
+							name="email" 
+							id="email-label"
+							value=""
+							placeholder="请输入邮箱"
+							required=""
+							/>
+						</div>
+						 <div class="form-group">
+						 		<label class="number" for="number-label">年龄</label>
+						 		<input type="number" 
+								min="10"
+								max="199"
+								step="0.5"
+						 		name="email" 
+						 		id="number-label" 
+						 		value=""
+						 		placeholder="请输入年龄"
+						 		required=""
+								/>
+							</div>
+						 <div class="form-group">
+							 <label>请问您在从事的职业</label>
+								 <select name="" required >
+									 <option disabled="" selected value ="">请选择职业</option>
+									 <option value ="">农民</option>
+									 <option value ="">自由职业</option>
+								 	<option value ="">工人</option>							
+									<option value ="">学生</option>
+									<option value ="">企业家</option>
+									<option value ="">公务员</option>
+								 </select>
+							 </div>
+							 
+						<div class="form-group" id="sweet-salty">
+							<p>什么豆腐脑好吃？(｡◕ˇ∀ˇ◕) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+							<input type="radio" name="sweet-salty" id="sweet" value="sweet" />
+							<label for="sweet">甜豆腐脑天下第一(✧◡✧))ﾉ</label>
+							<input type="radio" name="sweet-salty" id="salty" value="salty" />
+							<label for="salty">抱歉咸的才可以为所欲为(－＂－怒)</label>
+						</div>
+						
+						
+						<div class="form-group" id="improve" >
+							<p>甜<sub>/咸</sub>豆腐脑需要什么改进吗？</p>
+							<label>	
+							<input type="checkbox" class="checkbox" value="salt" />多放盐
+							</label>
+							
+							<label>							
+							<input type="checkbox" class="checkbox" value="sugar" />多放糖
+							</label>
+							<label>							
+							<input type="checkbox" class="checkbox" value="meat" />放肉
+							</label>
+							<label>								
+							<input type="checkbox" class="checkbox" value="vinegar" />多放醋</label>
+							<label>							
+							<input type="checkbox" class="checkbox" value="chili" />多放辣椒</label>
+						</div>
+						<div class="form-group">
+							<p class="a1">有什么意见或建议吗?</p>
+							<textarea placeholder="点击这里输入"	id="comments"
+							class="input-textarea"
+							name="comment"></textarea>
+								
+							
+
+						</div>
+						<div class="form-group">
+							<button type="submit" id="submit">提交</button>
+						</div>
+						<br>
+						<br>
+						<br>
+				</form>
+			</section>
+		</main>
+		
+		
+	</body>
+</html>
