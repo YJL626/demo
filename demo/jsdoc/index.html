@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>js-doc</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<a href="#"><div>top</div></a>
+		<nav class="navbar" id="navbar">
+			<header>JS-doc</header>
+			<ul >
+				<li><a href="#Introduction">介绍</a></li>
+				<li><a href="#What you should already know">你应该已经知道的</a></li>
+				<li><a href="#JavaScript and Java">JavaScript和java</a></li>
+				<li><a href="#Hello world">helloworld</a></li>
+				<li><a href="#Variables">变量</a></li>
+				<li><a href="#Declaring variables">声明变量</a></li>
+				<li><a href="#Variable scope">可变范围</a></li>
+				<li><a href="#Global variables">全局变量</a></li>
+				<li><a href="#Constants">常数</a></li>
+				<li><a href="#Data types">资料类型</a></li>
+				<li><a href="#if...else statement">if-else</a></li>
+				<li><a href="#while statement">while语句</a></li>
+				<li><a href="#Function declarations">函数声明</a></li>
+				<li><a href="#Reference">参考</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section id="Introduction">
+				<header>介绍</header>
+				<article>
+					<p>JavaScript是一种跨平台的，面向对象的脚本语言。它是一种小型轻量级语言。在主机环境（例如，Web浏览器）中，JavaScript可以连接到其环境的对象，以提供对它们的编程控制。
+					</p>
+					<p>JavaScript包含一个标准的对象库，例如Array，Date和Math，以及一组核心的语言元素，例如运算符，控件结构和语句。可以通过添加其他对象来扩展Core JavaScript，以实现多种用途。例如：
+					</p>
+					<ul>
+						<li>客户端JavaScript通过提供对象来控制浏览器及其文档对象模型（DOM），扩展了核心语言。例如，客户端扩展允许应用程序将元素放置在HTML表单上并响应用户事件，例如鼠标单击，表单输入和页面导航。
+</li>
+						<li>服务器端JavaScript通过提供与在服务器上运行JavaScript有关的对象来扩展核心语言。例如，服务器端扩展允许应用程序与数据库通信，提供信息从应用程序的一次调用到另一次调用的连续性，或在服务器上执行文件操作。
+</li>
+					</ul>
+				</article>
+			</section>
+			
+			
+			<section id="What you should already know">
+				<header>你应该已经知道的</header>
+				<article>
+					<p>本指南假定您具有以下基本背景：</p>
+					<ul>
+						<li>对Internet和万维网（WWW）的一般了解。</li>
+						<li>具有超文本标记语言（HTML）的良好使用知识。</li>
+						<li>有一定的编程经验。如果您不熟悉编程，请尝试在主页上链接有关JavaScript的教程之一。</li>
+					</ul>
+				</article>
+			</section>
+			
+			
+			<section id="JavaScript and Java">
+				<header>JavaScript和Java</header>
+				<article>
+					<p>JavaScript和Java在某些方面相似，但在其他方面则根本不同。JavaScript语言类似于Java，但是没有Java的静态类型和强类型检查。JavaScript遵循大多数Java表达式语法，命名约定和基本的控制流结构，这就是将其从LiveScript重命名为JavaScript的原因。
+					</p>
+					<p>与Java的由声明构建的类的编译时系统相反，JavaScript支持基于少量表示数字，布尔值和字符串值的数据类型的运行时系统。JavaScript具有一个基于原型的对象模型，而不是更常见的基于类的对象模型。基于原型的模型提供了动态继承。也就是说，继承的内容可能因单个对象而异。JavaScript还支持无特殊声明要求的函数。函数可以是对象的属性，可以作为松散类型的方法执行。
+					</p>
+					<p>与Java相比，JavaScript是一种非常自由的语言。您不必声明所有变量，类和方法。您不必担心方法是公共的，私有的还是受保护的，也不必实现接口。没有明确键入变量，参数和函数返回类型。
+					</p>
+				</article>
+			</section>
+			
+			<section id="Hello world">
+				<header>Hello world</header>
+				<article>
+					<p>要开始编写JavaScript，请打开Scratchpad并编写您的第一个“ Hello world” JavaScript代码：在</p>
+					<code>function greetMe(yourName) { alert("Hello " + yourName); }
+						 greetMe("World");
+					</code>
+					<p>记事本中选择代码，然后按Ctrl + R，以在浏览器中显示该代码！</p>
+				</article>
+			</section>
+			
+			<section id="Variables">
+				<header>变数</header>
+				<article>
+					<p>您可以将变量用作应用程序中值的符号名称。变量的名称（称为标识符）符合某些规则。</p>
+					<p>JavaScript标识符必须以字母，下划线（_）或美元符号（$）开头；后续字符也可以是数字（0-9）。因为JavaScript区分大小写，所以字母包括字符“ A”至“ Z”（大写）和字符“ a”至“ z”（小写）。
+					</p>
+					<p>您可以在标识符中使用ISO 8859-1或Unicode字母，例如å和ü。您也可以将Unicode转义序列用作标识符中的字符。合法名称的一些示例是Number_hits，temp99和_name。</p>
+				</article>
+			</section>
+			
+			<section id="Declaring variables">
+				<header>声明变量</header>
+				<article>
+					<p>您可以通过三种方式声明变量：</p>
+					<p>使用关键字var。例如，</p>
+					<code>var x = 42.</code>
+					<p>此语法可用于声明局部变量和全局变量。</p>
+					<p>使用关键字let。例如，<code> let y = 13.</code>此语法可用于声明块作用域局部变量。请参阅下面的变量范围。
+					</p>
+					
+				</article>
+			</section>
+			
+			<section id="Variable scope">
+				<header>可变范围</header>
+				<article>
+					<p>当您在任何函数之外声明变量时，该变量称为全局变量，因为它可用于当前文档中的任何其他代码。当您在函数内声明变量时，该变量称为局部变量，因为它仅在该函数内可用。
+					</p>
+					<p>ECMAScript 2015之前的JavaScript没有block语句范围；相反，在块内声明的变量对于该块所在的函数（或全局范围）而言是局部的。例如，以下代码将记录为5，因为x的范围是在其中声明x的函数（或全局上下文），而不是块（在本例中为if语句）。
+					</p>
+					<code>if (true) { var x = 5; } console.log(x); // 5</code>
+					<p>使用ECMAScript 2015中引入的let声明时，此行为会更改。<code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+						defined</code>
+					</p>
+				</article>
+			</section>
+			
+			<section id="Global variables">
+				<header>全局变量</header>
+				<article>
+					<p>实际上，全局变量是全局对象的属性。在网页中，全局对象是window，因此您可以使用window.variable语法设置和访问全局变量。
+					</p>
+					<p>因此，您可以通过指定窗口或框架名称来访问在另一个窗口或框架中在一个窗口或框架中声明的全局变量。例如，如果在文档中声明了一个名为phoneNumber的变量，则可以从iframe中将此变量称为parent.phoneNumber。
+					</p>
+				</article>
+			</section>
+			
+			<section id="Constants">
+				<header>Constants</header>
+				<article>
+					<p>您可以使用const关键字创建一个只读的，名为constant的常量。常量标识符的语法与变量标识符的语法相同：它必须以字母，下划线或美元符号开头，并且可以包含字母，数字或下划线字符。
+					</p>
+					<code>const PI = 3.14;</code>
+					<p>在脚本运行时，常量无法通过赋值更改值或重新声明。必须将其初始化为一个值。</p>
+					<p>常量的作用域规则与let块作用域变量的作用域规则相同。如果省略const关键字，则假定标识符表示变量。
+					</p>
+					<p>您不能在相同范围内声明与函数或变量同名的常量。例如：<code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+	        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+	        }</code></p>
+					<p>但是，对象属性不受保护，因此执行以下语句不会出现问题。<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+					</code></p>
+				</article>
+			</section>
+			
+			
+			<section id="Data types">
+				<header>资料类型</header>
+				<article>
+					<p>最新的ECMAScript标准定义了七种数据类型：</p>
+					<ul style="list-style-type: circle; margin-left: 3rem;">
+						<li style="list-style-type: disc; margin-left: 2rem;"><p>六种原始数据类型：</p></li>
+						<li>布尔值。真假。
+						</li>
+						<li>空。表示空值的特殊关键字。因为JavaScript区分大小写，所以null与Null，NULL或任何其他变体不同。</li>
+						<li>undefined。值未定义的顶级属性。</li>
+						<li>数字。42或3.14159。</li>
+						<li>字符串。“你好”</li>
+						<li>符号（ECMAScript 2015中的新增功能）。一种数据类型，其实例是唯一且不可变的。</li>
+					</ul>
+				</article>
+			</section>
+			
+			<section id="if...else statement">
+				<header>如果...否则声明</header>
+				<article>
+					<p>如果逻辑条件为真，则使用if语句执行一条语句。如果条件为假，则使用可选的else子句执行一条语句。if语句如下所示：
+					</p>
+					<code>if (condition) { statement_1; } else { statement_2; }</code>
+					<p>condition可以是任何值为true或false的表达式。请参见布尔值，以获取有关计算结果为true和false的解释。如果条件评估为true，则执行statement_1；否则，执行false。否则，执行statement_2。statement_1和statement_2可以是任何语句，包括进一步嵌套的if语句。
+					</p>
+					<p>如果要依次测试多个条件，也可以使用else复合语句，如下所示：<code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+	        } else if (condition_n) { statement_n; } else { statement_last; }</code></p>
+					<p>在多个条件的情况下，将仅执行评估为true的第一个逻辑条件。要执行多个语句，请将它们组合在一个block语句（{...}）中。通常，最好总是使用块语句，尤其是在嵌套if语句时：
+					</p>
+					<code>if (condition) { statement_1_runs_if_condition_is_true;
+	        statement_2_runs_if_condition_is_true; } else {
+	        statement_3_runs_if_condition_is_false;
+	        statement_4_runs_if_condition_is_false; }</code>
+					<p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
+						<code>if (x = y) { /* statements here */ }</code></p>
+						<p>如果您需要在条件表达式中使用赋值，通常的做法是在赋值周围加上其他括号。例如：<code>if ((x = y)) { /* statements here */ }
+						</code></p>
+					
+				</article>
+			</section>
+			
+			<section id="while statement">
+				<header>while语句</header>
+				<article>
+					<p>只要指定条件的计算结果为true，while语句就会执行其语句。while语句如下所示：<code>while (condition) statement
+					</code></p>
+				<p>如果条件变为false，则循环内的语句停止执行，控制权传递给循环后的语句。<br>
+条件测试在执行循环中的语句之前进行。<br>如果条件返回true，则执行语句并再次测试条件。如果条件返回false，则执行停止，并将控制权传递给while语句。<br>
+要执行多个语句，请使用block语句（{...}）对这些语句进行分组。</p>
+				<p>例：<br>只要n小于3，以下while循环就会迭代：<code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }
+				</code></p>
+				<p>在每次迭代中，循环将n递增，并将该值添加到x。因此，x和n取以下值：</p>
+				<ul>
+					<li>第一次通过后：n = 1和x = 1</li>
+					<li>在第二遍之后：n = 2和x = 3</li>
+					<li>在第二遍之后：n = 2和x = 3</li>
+				</ul>
+				<p>在完成第三遍之后，条件n <3不再成立，因此循环终止。</p>
+				</article>
+			</section>
+			
+			
+			<section id="Function declarations">
+				<header>函数声明</header>
+				<article>
+					<p>函数声明</p>
+					<ul>
+						<li>函数的名称。</li>
+						<li>该函数的参数列表，用括号括起来并用逗号分隔。
+						</li>
+						<li><定义函数的JavaScript语句，用大括号{}括起来。
+						/li>
+						<p>例如，以下代码定义了一个名为square的简单函数：<code>function square(number) { return number * number; }
+						</code></p>
+						<p>函数square接受一个称为数字的参数。该函数由一个语句组成，该语句表示返回乘以其自身的函数参数（即number）。return语句指定函数返回的值。
+						<code>return number * number;</code></p>
+					</ul>
+					<p>基本参数（例如数字）按值传递给函数；值将传递给函数，但是如果函数更改了参数的值，则此更改不会反映在全局或调用函数中。
+					</p>
+				</article>
+			</section>
+			
+			<section id="Reference">
+				<header>参考</header>
+				<article>
+					<p style="text-align: center; margin-bottom: 3.6rem;">此页面中的所有文档均取自 <a style="color: #0000EE;"  href="https://developer.mozilla.org/zh-CN/">MDN</a></p>
+				</article>
+			</section>
+		</main>
+	</body>
+</html>
