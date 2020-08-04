@@ -1,0 +1,17 @@
+div{
+	
+	font-size: 2rem;
+	word-wrap: break-word;
+	max-width: 100%;
+	margin: 10rem 20vmin;
+	text-align: center;
+}
+span{
+	font-size: 4rem;
+	font-weight: 520;
+	text-align: center;
+}
+p{
+	font-weight: 550;
+	color: coral;
+}
