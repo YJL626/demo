@@ -14,7 +14,7 @@ function writeP(){
 /* 穷举 */
 function showPrimes(n){
 	if(Number(n)!==NaN){
-		for(q=1;q<n;q++){
+		for(q=2;q<n;q++){
 			isPrimes(q);
 		}
 	}else{
