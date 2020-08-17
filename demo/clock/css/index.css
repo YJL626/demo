@@ -1,0 +1,14 @@
+body {
+	height: 90vh;
+	color: aqua;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+}
+button{
+	height: 3.6rem;
+	float: left;
+	width: 45%;
+	margin-left: 10px;
+}
