@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	margin:  0 auto;
+	max-width: 1000px;
+	width: 100vw;
+	height: 100vh;	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+	align-items: center;
+}
+.nineCell{
+	max-width: 750px;
+	max-height: 750px;
+	width: 99vw;
+	height:99vw;
+	display: grid;
+	grid-template-columns: 32% 32% 32%;
+	grid-gap: calc(4%/3);
+}
+.cell{
+	background-color: #FFA600;
+	border-radius: 10px;
+}
+.btndiv{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.button{
+
+	margin-bottom: 10px;
+	max-width: 750px;
+	max-height: 750px;
+	height: 3rem;
+	width: 100%;
+	background: #FEFEFE;
+	border: 1px solid #FED17C;
+	border-radius: 8px;
+	outline: none;
+	transition: background 0.5 ease-in; 
+}
+.button:hover{
+	background: rgb(238,153,0);
+}
