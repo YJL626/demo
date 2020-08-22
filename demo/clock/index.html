@@ -1,25 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title></title>
-	<script src="js/custom.js" type="text/javascript">
-	</script>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			height: 80vh;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		p{
 
-</head>
-<body>
-	<div id="">
-		<h1 id="time"></h1>
-		<button type="button" id="start">start</button>
-		<button type="end" id="end">end</button>
-	</div>
+			text-align: center;
+			font-size: 60px;
+		}
+		#h{
+			color: red;
+		}
+		#m{
+			color: #57AB57;
+		}
+		#s{
+			color: #7676FF;
+		}
+		button{
+			margin-top: 0.5rem;
+			width: 48%;
+			height:2rem
+		}
+	</style>
+	<body>
 
-</body>
+			
+			<div>
+				<p>
+					<span id="h">10</span>:
+					<span id="m">10</span>:
+					<span id="s">10</span>
+				</p>
+				<button type="button" id="start">start</button>
+				<button type="button" id="end">end</button>
+			</div>
 
-	<script src="js/aa.js" type="text/javascript">
-		
-	</script>
+		<script src="js/custom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
 </html>
