@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			display: inline-block;
+		}
+		ul{
+			width: 9990px;;
+			transition: margin-left 1s ease-out ;
+		}
+		#gallery{
+			overflow: hidden;
+			width: 500px;
+			margin: 5px 0;
+			
+		}
+		#carousel{
+			width: 500px;
+			display: flex;
+			position: relative;
+			justify-content: space-between;
+			background-color: #EEEEEE;
+			border-radius: 20px;
+		}
+		button{
+			cursor: pointer;
+			display: inline-block;
+			font-size: 28px;
+			height: 50%;
+			align-self: center;
+			border: none;
+			background-color: #EEEEEE;
+			outline: none;
+			transition: transform 0.5s ease-out;
+		}
+		button:hover{
+			transform: scale(1.1);
+		}
+		#arrow1{
+			margin-left: 20px;
+			
+		}
+		#arrow2{
+			margin-right: 20px;
+			
+		}
+	</style>
+</head>
+<body>
+	<div id="carousel">
+		<button id="arrow1">⇦</button>
+		<div id="gallery">
+			
+			<ul id="ul">
+			  <li><img src="https://en.js.cx/carousel/1.png">
+			  <li><img src="https://en.js.cx/carousel/2.png">
+			  <li><img src="https://en.js.cx/carousel/3.png">
+			  <li><img src="https://en.js.cx/carousel/4.png">
+			  <li><img src="https://en.js.cx/carousel/5.png">
+			  <li><img src="https://en.js.cx/carousel/6.png">
+			  <li><img src="https://en.js.cx/carousel/7.png">
+			  <li><img src="https://en.js.cx/carousel/8.png">
+			  <li><img src="https://en.js.cx/carousel/9.png">
+			  <li><img src="https://en.js.cx/carousel/10.png">
+			</ul>
+			
+		</div>
+		<button id="arrow2">⇨</button>
+		
+	</div>
+	<script type="text/javascript">
+		window.onload= ()=>{
+			carousel.style.height = carousel.clientHeight+"px";
+			let place = 0;
+			let count = 3;
+			let li = ul.querySelector(`li`);
+			let galleryWidth = li.offsetWidth*count;
+			gallery.style.width = galleryWidth +"px";
+			let liCount = Array.from(ul.querySelectorAll(`li`)).length;
+			let ulWidth = Math.ceil(li.offsetWidth*liCount / galleryWidth)*galleryWidth;
+			
+			arrow1.onclick=()=>{
+				if(place >= 0){
+					place = -ulWidth + galleryWidth;
+					ul.style.marginLeft = place+"px"
+					return;
+				}
+				place += li.offsetWidth*count;
+				ul.style.marginLeft = place+"px"
+			}
+			
+			arrow2.onclick=()=>{
+				if(place <= -ulWidth + galleryWidth){
+					place = 0;
+					ul.style.marginLeft = place+"px"
+					return;
+				}
+				place -= li.offsetWidth*count;
+				ul.style.marginLeft = place+"px"
+			}
+			let a = setTimeout(function aa(){
+				
+				place -= li.offsetWidth*count;
+				ul.style.marginLeft = place+"px"
+				if(place <= -ulWidth + galleryWidth)place = galleryWidth;
+					
+				a =setTimeout(aa,5000)
+			},5000 )
+			
+			
+		}
+	</script>
+
+	
+	
+
+
+</body>
+</html>
