@@ -8,7 +8,6 @@ export default {
       let nodeOption = {
         on: {
           click() {
-            console.log(vm.shareURLList);
             window.open(vm.shareURLData[key], "_blank", "resizable=yes");
           },
         },
@@ -54,7 +53,6 @@ export default {
           p1 = p1.toLowerCase();
           return vm.config[p1] || "none";
         });
-        console.log(acc);
         return acc;
       }, {});
     },

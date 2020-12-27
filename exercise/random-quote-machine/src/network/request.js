@@ -1,6 +1,6 @@
 import axios from "axios";
 const requestQuote = axios.create({
-  baseURL: "https://v1.a1lapi.cn/api",
+  baseURL: "https://v1.alapi.cn/api",
   timeout: 2000,
 });
 export function getQuote(typeid) {
